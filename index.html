@@ -7,15 +7,21 @@
 </head>
 <body>
     <div id="app">
-        <div id="controls">
-            <button onclick="addBook()">Agregar Libro</button><br><br>
-            <button onclick="removeBook()">Eliminar Último Libro</button><br><br>
-            <button onclick="exitApp()">Salir</button><br><br>
-            <input type="text" id="bookInput" placeholder="Nombre del libro">
+        <div id="logo-container">
+            <img src="static/img/logo.jpg" alt="Logo" id="logo">
         </div>
-        <div id="book-list">
-            <h3>Lista de Libros</h3>
-            <ul id="books"></ul>
+        <div id="controls">
+            <input type="text" id="bookInput" placeholder="Nombre del libro">
+            <button onclick="addBook()">Agregar Libro</button>
+            <button onclick="removeBook()">Eliminar Último Libro</button>
+            <button onclick="showAllBooks()">Mostrar Todos los Libros</button>
+            <button onclick="exitApp()">Salir</button>
+        </div>
+        <div id="book-container">
+            <div id="book">
+                <h3>Lista de Libros</h3>
+                <ul id="books"></ul>
+            </div>
         </div>
     </div>
 
