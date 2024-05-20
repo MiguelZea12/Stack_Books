@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack Books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="controls">
+            <button onclick="addBook()">Agregar Libro</button><br><br>
+            <button onclick="removeBook()">Eliminar Último Libro</button><br><br>
+            <button onclick="exitApp()">Salir</button><br><br>
+            <input type="text" id="bookInput" placeholder="Nombre del libro">
+        </div>
+        <div id="book-list">
+            <h3>Lista de Libros</h3>
+            <ul id="books"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
